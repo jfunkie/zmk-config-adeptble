@@ -147,12 +147,9 @@
         // Scroll behavior
         scroll {
             layers = <SCRLM SCRLH>;
-            input-processors =
-                //<&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,  // invert X if needed
-                //<&zip_xy_swap_mapper>,                           // swap axes for scroll
-                <&zip_xy_to_scroll_mapper>,                      // convert XY -> scroll
-                //<&zip_x_scaler 1 10>,                          // scale x by 1/10
-                <&zip_y_scaler 10 1>;                          // scale x by 1/10
+            input-processors = <
+                &zip_xy_to_scroll_mapper                     // convert XY -> scroll
+            >;
             process-next;
         };
 
