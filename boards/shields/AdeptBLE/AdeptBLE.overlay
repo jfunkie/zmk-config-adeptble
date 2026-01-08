@@ -140,7 +140,7 @@
         // Default cursor motion: correct orientation for your sensor
         default {
             layers = <DEFAULT>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_SWAP>; // corrects default X/Y
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>; // corrects default X/Y
             process-next;
         };
 
