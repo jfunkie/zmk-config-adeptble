@@ -168,10 +168,10 @@
         scroll {
             layers = <SCRLM SCRLH>;
             input-processors = <
-                &zip_xy_scaler 1 10                            // scale xy by 0.1
+                //&zip_xy_scaler 1 10                            // scale xy by 0.1
                 &zip_xy_to_scroll_mapper                     // convert XY -> scroll
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
-                &zip_scroll_scaler 1 10
+                &zip_scroll_scaler 1 5
                 //&zip_scroll_x_scaler 16 1                    // horizontal scroll
                 //&zip_scroll_y_scaler 1 16                    // vertical scroll
             >;
