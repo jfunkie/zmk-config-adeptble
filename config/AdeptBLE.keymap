@@ -128,10 +128,10 @@
         snipe_layer {
             display-name = "Snipe";
             bindings = <
-&trans  &trans  &trans  &lth SCRLM RCLK
+&trans  &trans  &trans  &to 0
 
 
-&trans                  &to DEFAULT
+&trans                  &lth 1 RCLK
             >;
         };
     };
