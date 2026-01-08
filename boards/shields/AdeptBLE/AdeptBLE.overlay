@@ -170,7 +170,7 @@
             input-processors = <
                 &zip_xy_to_scroll_mapper                     // convert XY -> scroll
                 &zip_scroll_x_scaler 0 1                    // horizontal scroll
-                &zip_scroll_y_scaler 1 5                    // vertical scroll
+                &zip_scroll_y_scaler 1 16                    // vertical scroll
             >;
             process-next;
         };
