@@ -78,7 +78,7 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&ltm BLTH MB4  &ltm DEVICE MB5  &mto 1 5  &mkp MB3
+&ltm BLTH MB4  &ltm DEVICE MB3  &mto 1 5  &mkp MB5
 
 
 &mkp LCLK                                 &ltm SCRLM RCLK
