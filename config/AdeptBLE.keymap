@@ -78,20 +78,20 @@
         default_layer {
             display-name = "Default";
             bindings = <
-&ltm BLTH MB4  &ltm DEVICE MB5  &mkp MCLK  &mto 1 5
+&ltm BLTH MB4  &ltm DEVICE MB5  &mto 1 5  &mkp MB3
 
 
-&mkp LCLK                                  &ltm SCRLM RCLK
+&mkp LCLK                                 &ltm SCRLM RCLK
             >;
         };
 
         scroll_tap_layer {
             display-name = "Scroll-Momentary";
             bindings = <
-&trans     &trans  &to SCRLH  &trans
+&trans     &trans  &trans  &to 2
 
 
-&to SCRLH                     &trans
+&to SCRLH                  &trans
             >;
         };
 
@@ -128,10 +128,10 @@
         snipe_layer {
             display-name = "Snipe";
             bindings = <
-&trans  &trans  &trans  &to 0
+&trans  &trans  &to 0  &trans
 
 
-&trans                  &lth 1 RCLK
+&trans                 &lth 1 RCLK
             >;
         };
     };
